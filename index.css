@@ -1,0 +1,20 @@
+img {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+
+body {color:rgba(15, 1, 1, 0.957);}
+h1 {color:#ff0000;}
+h2 {color:rgb(255,0,0);}
+h3 {color:rgb(32, 229, 35);}
+p1 {color:rgb(38, 0, 255);}
+
+a {text-decoration:none;}
+p {text-indent:20px;}
+p {background-color:#31e1d394;}
+
+p {flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
