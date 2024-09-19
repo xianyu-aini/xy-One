@@ -26,9 +26,16 @@
  let dzsbq = window.document.getElementById('dzs');
  let dzs = parseInt(dzsbq.innerText);
  let xsz = dzs + 1;
+ localStorage.removeItem('shi',dzsbq.innerText);
  dzsbq.innerText = xsz;
+ window.document.getElementById('shi',dzsbq.innerText);
  return   
  } 
+ let data=window.localStorage.getElementById('shi');
+ if(data)
+    {
+        document.getElementById('dzs').innerText=data;
+    }
 </script>
 <a href="https://xianyu-aini.github.io/xy-One/new.html">前往第一页</a>
 </body>
