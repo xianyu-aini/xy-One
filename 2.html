@@ -31,7 +31,7 @@
  window.localStorage.setItem('shi',dzsbq.innerText);//保存本地新数据
  return   
  } 
- let data=window.localStorage.getElementById('shi');//赋值一个变量为本地数据
+ let data=window.localStorage.getItem('shi');//赋值一个变量为本地数据
  if(data)//变量是否变化
     {
         document.getElementById('dzs').innerText=data;//赋值新的变量
