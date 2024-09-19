@@ -26,15 +26,15 @@
  let dzsbq = window.document.getElementById('dzs');
  let dzs = parseInt(dzsbq.innerText);
  let xsz = dzs + 1;
- localStorage.removeItem('shi',dzsbq.innerText);
+ window.localStorage.removeItem('shi',dzsbq.innerText);//删除本地旧数据
  dzsbq.innerText = xsz;
- window.document.getElementById('shi',dzsbq.innerText);
+ window.localStorage.setItem('shi',dzsbq.innerText);//保存本地新数据
  return   
  } 
- let data=window.localStorage.getElementById('shi');
- if(data)
+ let data=window.localStorage.getElementById('shi');//赋值一个变量为本地数据
+ if(data)//变量是否变化
     {
-        document.getElementById('dzs').innerText=data;
+        document.getElementById('dzs').innerText=data;//赋值新的变量
         change();
     }
 </script>
